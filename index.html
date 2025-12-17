@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome - Vidath Rajinda</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;900&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            height: 100vh;
+            overflow: hidden;
+            
+            /* BACKGRUND IMG */
+            background-image: url('Gemini_Generated_Image_79jdl79jdl79jdl7.png'); 
+            background-size: cover;
+            background-position: center;
+        }
+
+       
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%; 
+            height: 100%;
+            background: linear-gradient(90deg, #050b1e 40%, rgba(5, 11, 30, 0.95) 60%, transparent 100%);
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .content-container {
+            width: 50%;
+            padding-left: 80px;
+        }
+
+        /* logo */
+        .logo {
+            position: absolute;
+            top: 40px;
+            left: 80px;
+            font-weight: bold;
+            font-size: 20px;
+            display: flex;
+            align-items: center;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        .logo-icon {
+            font-size: 24px;
+            margin-right: 10px;
+            color: #00d2ff; 
+        }
+
+        
+        
+       
+        h1 {
+            font-family: 'Orbitron', sans-serif; 
+            font-size: 55px;
+            margin: 0;
+            line-height: 1.2;
+            text-transform: uppercase;
+            min-height: 66px;
+            display: inline-block;
+            
+            
+            background: linear-gradient(to right, #ffffff, #00d2ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            
+            
+            filter: drop-shadow(0 0 10px rgba(0, 210, 255, 0.5));
+        }
+
+        
+        h3 {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 28px;
+            margin-top: 15px;
+            margin-bottom: 50px;
+            font-weight: 900; /* Extra Bold */
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            min-height: 30px;
+            display: inline-block;
+
+           
+            background: linear-gradient(to right, #ff9966, #ff5e62);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            
+            filter: drop-shadow(0 0 5px rgba(255, 94, 98, 0.5));
+        }
+
+        
+        .typing-cursor {
+            border-right: 4px solid #00d2ff; /* Cyan Cursor */
+            animation: blink 0.75s step-end infinite;
+        }
+        @keyframes blink { 50% { border-color: transparent; } }
+
+      
+
+        
+        .auto-btn {
+            background: linear-gradient(45deg, #00d2ff, #3a7bd5); 
+            color: white; 
+            padding: 15px 40px;
+            font-size: 20px;
+            font-weight: bold;
+            border-radius: 50px;
+            border: none;
+            display: block; 
+            text-decoration: none;
+            box-shadow: 0 0 20px rgba(0, 210, 255, 0.4); 
+            margin-bottom: 60px;
+            cursor: pointer;
+            width: fit-content;
+            letter-spacing: 1px;
+            transition: transform 0.2s;
+        }
+        .auto-btn:hover {
+            transform: scale(1.05);
+        }
+
+        /* contac */
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            font-size: 14px;
+            opacity: 0.8;
+        }
+        .contact-item { display: flex; align-items: center; }
+        .icon-circle {
+            background-color: rgba(255,255,255,0.1);
+            border: 1px solid rgba(255,255,255,0.2);
+            color: #00d2ff;
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 12px;
+            font-size: 16px;
+        }
+        .contact-text div {
+            font-size: 10px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #00d2ff;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="overlay">
+        
+        <div class="logo">
+            <span class="logo-icon">❖</span> Vidath Portfolio
+        </div>
+
+        <div class="content-container">
+            
+            <h1 id="welcome-text"></h1><br>
+            <h3 id="name-text"></h3>
+
+            <a href="new.html" class="auto-btn" id="loginBtn">
+                AUTO LOGING YOU <span id="timer">(4s)</span>
+            </a>
+
+            <div class="contact-grid">
+                <div class="contact-item">
+                    <div class="icon-circle">📞</div>
+                    <div class="contact-text"><div>Phone</div>+94 74 167 4793</div>
+                </div>
+                <div class="contact-item">
+                    <div class="icon-circle">✉️</div>
+                    <div class="contact-text"><div>E-Mail</div>vidathsamaranayaka@gmail.com</div>
+                </div>
+                <div class="contact-item">
+                    <div class="icon-circle">🌐</div>
+                    <div class="contact-text"><div>Website</div>www.vidath.com</div>
+                </div>
+                <div class="contact-item">
+                    <div class="icon-circle">🏠</div>
+                    <div class="contact-text"><div>Address</div>beliaththa, Sri Lanka</div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        
+        const welcomeMsg = "WELCOME TO YOU....";
+        const nameMsg = "I AM VIDATH RAJINDA";
+        const typeSpeed = 80; 
+        
+
+        const welcomeElement = document.getElementById("welcome-text");
+        const nameElement = document.getElementById("name-text");
+
+        let charIndex1 = 0;
+        let charIndex2 = 0;
+
+        function typeWelcome() {
+            if (charIndex1 < welcomeMsg.length) {
+                welcomeElement.classList.add("typing-cursor"); 
+                welcomeElement.innerHTML += welcomeMsg.charAt(charIndex1);
+                charIndex1++;
+                setTimeout(typeWelcome, typeSpeed);
+            } else {
+                welcomeElement.classList.remove("typing-cursor"); 
+                setTimeout(typeName, 300); 
+            }
+        }
+
+        function typeName() {
+            if (charIndex2 < nameMsg.length) {
+                nameElement.classList.add("typing-cursor");
+                nameElement.innerHTML += nameMsg.charAt(charIndex2);
+                charIndex2++;
+                setTimeout(typeName, typeSpeed);
+            }
+        }
+
+        window.onload = function() {
+            typeWelcome();
+        };
+
+        // TIME balance
+        let timeLeft = 4;
+        const timerDisplay = document.getElementById('timer');
+        const loginBtn = document.getElementById('loginBtn');
+
+        const countdown = setInterval(() => {
+            timeLeft--;
+            timerDisplay.textContent = "(" + timeLeft + "s)";
+
+            if (timeLeft <= 0) {
+                clearInterval(countdown);
+                loginBtn.innerHTML = "ENTERING...";
+                window.location.href = "new.html"; 
+            }
+        }, 1000); 
+    </script>
+
+</body>
+</html>
